@@ -43,8 +43,7 @@ string[] ArrayWithoutLongText(string[] arr)
     string[] ArrOnlySmall = new string[arr.Length];
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i].Length > 7 && i < arr.Length - 1) ArrOnlySmall[i] = "";
-        else if (arr[i].Length > 5 && i == arr.Length - 1) ArrOnlySmall[i] = "";
+        if (arr[i].Length > 7 && i < arr.Length - 1||arr[i].Length > 5 && i == arr.Length - 1) ArrOnlySmall[i] = "";
         else ArrOnlySmall[i] = arr[i];
     }
     return ArrOnlySmall;
