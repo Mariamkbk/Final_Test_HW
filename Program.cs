@@ -53,8 +53,10 @@ try
     Console.WriteLine("Введите числовое значение размера массива");
     int length = Convert.ToInt32(Console.ReadLine());
     string[] array = FillArray(length);
+    Console.Write("Задан массив строк: ");
     PrintArray(array);
     string[] ArrShortWords = ArrayWithoutLongText(array);
+    Console.Write("Строки размером 3 символа и менее: ");
     PrintArray(ArrShortWords);
 }
 catch
