@@ -58,7 +58,7 @@ try
     string[] ArrShortWords = ArrayWithoutLongText(array);
     Console.Write("Строки размером 3 символа и менее: ");
     PrintArray(ArrShortWords);
-}
+} 
 catch
 {
     Console.WriteLine("Проверьте правильность введенных данных");
